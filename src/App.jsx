@@ -1,20 +1,12 @@
-import React from 'react';
+import React from "react";
+import Nav from "./components/nav/Nav";
 
 const App = () => {
   return (
     <div>
+      <Nav />
       <div>
-        <div>Mo Code</div>
-        <nav>
-          <ul>
-          <li>files</li>
-          <li>files</li>
-        </ul>
-        </nav>
-      </div>
-      <div>
-      <div>Img</div>
-      <p>Text</p>
+        <img src="" alt="Image of the creator of page" />
       </div>
     </div>
   );
