@@ -41,12 +41,12 @@ const Aboutme = () => {
 
   return (
     <div
-      className="border border-black relative w-full h-full"
+      className="border border-black border-dotted relative w-full h-full"
       onMouseDown={handleMouseDown}
     >
       <div
         ref={redDivRef}
-        className="border border-red-900 mt-14"
+        className="border border-neutral-900 mt-14 border-dotted"
         style={{
           position: "absolute",
           left: position.x,
@@ -56,7 +56,7 @@ const Aboutme = () => {
           padding: "20px",
         }}
       >
-        <img src="./src/assets/img/blackfolder.png" alt="" />
+        <img className="w-16 h-16" src="./src/assets/img/blackfolder.png" alt="" />
       </div>
     </div>
   );
