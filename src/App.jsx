@@ -26,6 +26,11 @@ const App = () => {
         <Experience />
         <Projects />
       </div>
+      <div>
+        <footer>
+          <p className="mt-96 flex justify-center bottom-0 text-sm p-28 bg-neutral-900 text-white">Copyright © 2023 Mohamed Al-Shaibi</p>
+        </footer>
+      </div>
     </div>
   );
 };
