@@ -56,7 +56,7 @@ const Aboutme = () => {
           padding: "20px",
         }}
       >
-        <img className="w-16 h-16" src="./src/assets/img/blackfolder.png" alt="" />
+        <img className="w-14 h-14" src="./src/assets/img/blackfolder.png" alt="" />
       </div>
     </div>
   );
