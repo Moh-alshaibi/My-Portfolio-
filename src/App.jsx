@@ -1,18 +1,27 @@
-import React from "react";
+import React, { useRef } from "react";
 import Nav from "./components/Nav";
 import Aboutme from "./components/Aboutme";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 
+// plain js goes here
+
 const App = () => {
+  const aboutMeRef = useRef(null);
+  const handleDiscoverClick = () => {
+    aboutMeRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+  
   return (
     <div>
-      <Nav />
+      <Nav handleDiscoverClick={handleDiscoverClick} />
       <div className="flex justify-center mt-64 ml-28">
         <img src="./src/assets/img/me.png" alt="" className="" />
         <div>
-          <p className="ml-12 mt-4">Hey!</p>
+          <p className="ml-12 mt-4">
+            Hey!
+          </p>
           <p className="ml-12 mt-4 w-96">
             My name is <span className="text-red-900">Mohamed</span> and I'm a
             web developer who specializes in designing and building web
@@ -20,17 +29,15 @@ const App = () => {
           </p>
         </div>
       </div>
-      <div className="mt-96">
+      <div className="mt-96" ref={aboutMeRef}>
         <Aboutme />
         <Contact />
         <Experience />
         <Projects />
       </div>
-      <footer className="mt-40 flex justify-center pt-38 text-sm p-14 bg-neutral-900 text-white ">
+      <footer className="mt-72 flex justify-center pt-38 text-sm p-14 bg-neutral-900 text-white ">
         <div>
-          <p className="h-5">
-            Copyright © 2023 Mohamed Al-Shaibi
-          </p>
+          <p className="h-5">Copyright © 2023 Mohamed Al-Shaibi</p>
           <div className="social-links">
             <div id="twitter" className="social-btn flex-center">
               <svg
