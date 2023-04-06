@@ -8,8 +8,26 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Press Start 2P", cursive;
-  background-color: #ffe4dc;
+  background-color: #f0dcd4;
   overflow: overlay;
+  cursor: url('/src/assets/img/cursor5.png'), auto;
+}
+
+#dottedborder{
+  border: 1px dotted #000000;
+  position: relative;
+  width: 100%;
+  height: 940px  
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
 }
 
 ::-webkit-scrollbar {
