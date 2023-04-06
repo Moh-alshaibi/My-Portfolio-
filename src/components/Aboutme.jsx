@@ -41,7 +41,7 @@ const Aboutme = () => {
 
   return (
     <div
-      className="border border-black border-dotted relative w-full h-98"
+      id="dottedborder"
       onMouseDown={handleMouseDown}
     >
       <div
