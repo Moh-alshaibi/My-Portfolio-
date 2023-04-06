@@ -5,6 +5,7 @@ import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 
+
 // plain js goes here
 
 const App = () => {
@@ -35,7 +36,7 @@ const App = () => {
         <Experience />
         <Projects />
       </div>
-      <footer className="mt-72 flex justify-center pt-38 text-sm p-14 bg-neutral-900 text-white ">
+      <footer className="flex justify-center pt-38 text-sm p-14 bg-neutral-900 text-white ">
         <div>
           <p className="h-5">Copyright © 2023 Mohamed Al-Shaibi</p>
           <div className="social-links">
