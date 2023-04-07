@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 
 const Aboutme = () => {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [position, setPosition] = useState({ x: 180, y: 100 });
   const [isDragging, setIsDragging] = useState(false);
   const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
 
@@ -41,19 +41,19 @@ const Aboutme = () => {
 
   return (
     <div
-      id="dottedborder"
+      
       onMouseDown={handleMouseDown}
     >
       <div
         ref={redDivRef}
-        className="border border-neutral-900 mt-14 border-dotted"
+        className="border border-neutral-900 mt-14"
         style={{
           position: "absolute",
           left: position.x,
           top: position.y,
-          cursor: isDragging ? "grabbing" : "grab",
+          cursor: isDragging ? "Pointer" : "point",
           zIndex: isDragging ? 1 : 0,
-          padding: "20px",
+          padding: "15px",
         }}
       >
         <img className="w-14 h-14" src="./src/assets/img/blackfolder.png" alt="" />

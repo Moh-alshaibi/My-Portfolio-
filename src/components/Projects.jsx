@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef }  from 'react';
 
 const Projects = () => {
-    const [position, setPosition] = useState({ x: 0, y: 0 });
+    const [position, setPosition] = useState({ x: 1640, y: 700 });
     const [isDragging, setIsDragging] = useState(false);
-    const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
+    const [dragOffset, setDragOffset] = useState({ x: 1500, y: 1500 });
   
     const redDivRef = useRef(null);
   
@@ -38,21 +38,30 @@ const Projects = () => {
         });
       }
     }
-  
+
+    function handleMouseDown(event) {
+      setIsDragging(true);
+      const redDivRect = redDivRef.current.getBoundingClientRect();
+      const cursorOffsetX = event.clientX - redDivRect.left;
+      const cursorOffsetY = event.clientY - redDivRect.top;
+      setDragOffset({ x: cursorOffsetX, y: cursorOffsetY });
+    }
+    
     return (
       <div
         onMouseDown={handleMouseDown}
       >
         <div
+          
           ref={redDivRef}
-          className="border border-neutral-900 mt-14 border-dotted"
+          className="border border-neutral-900 mt-14"
           style={{
             position: "absolute",
             left: position.x,
             top: position.y,
-            cursor: isDragging ? "grabbing" : "grab",
+            cursor: isDragging ? "Pointer" : "point",
             zIndex: isDragging ? 1 : 0,
-            padding: "20px",
+            padding: "15px",
           }}
         >
           <img className="w-14 h-14" src="./src/assets/img/greenfolder.png" alt="" />
