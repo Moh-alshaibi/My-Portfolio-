@@ -1,11 +1,20 @@
+import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import React, { useRef } from "react";
 import Nav from "./components/Nav";
 import Aboutme from "./components/Aboutme";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import Test from "./pages/Test";
 
 // plain js goes here
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Test />,
+  },
+]);
 
 const App = () => {
   const aboutMeRef = useRef(null);
@@ -15,15 +24,23 @@ const App = () => {
 
   return (
     <div>
+      {/* <RouterProvider router={router}> */}
       <Nav handleDiscoverClick={handleDiscoverClick} />
       <div className="flex justify-center mt-64 ml-28">
-        <img src="./src/assets/img/me.png" alt="" className="" />
+        {/* <img src="./src/assets/img/me.png" alt="" className="" /> */}
         <div>
-          <p className="ml-12 mt-4">Hey!</p>
-          <p className="ml-12 mt-4 w-96">
+          <p className="ml-96 text-2xl">Hey!</p>
+          <p className="ml-96 mt-8 w-1/2">
             My name is <span className="text-red-900">Mohamed</span> and I'm a
             web developer who specializes in designing and building web
             applications and websites.
+          </p>
+          <p className="ml-96 mt-8 w-1/2 text-lg">
+            These files offer a unique and exciting{" "}
+            <span className="text-blue-900">opportunity</span> to explore my
+            work, where you can learn more about my{" "}
+            <span className="text-green-600">skills</span> and{" "}
+            <span className="text-yellow-600">talents</span>.
           </p>
         </div>
       </div>
@@ -33,10 +50,9 @@ const App = () => {
         <Experience />
         <Projects />
       </div>
-
-      <footer className="testin flex justify-center pt-38 text-sm p-14 bg-neutral-900 text-white">
+      <footer className="flex justify-center pt-38 text-sm p-14 bg-neutral-900 text-white">
         <div>
-          <p className="p-2 hover:text-yellow-200">
+          <p className="p-2 hover:text-red-300">
             Copyright © 2023 Mohamed Al-Shaibi
           </p>
           <div className="social-links">
@@ -76,7 +92,9 @@ const App = () => {
           </div>
         </div>
       </footer>
+      {/* </RouterProvider> */}
     </div>
   );
 };
+
 export default App;
