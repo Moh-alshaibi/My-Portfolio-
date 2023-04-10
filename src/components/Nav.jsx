@@ -8,7 +8,7 @@ const Nav = ({ handleDiscoverClick }) => {
           <li className="bg-neutral-900 text-white font-bold py-2 px-4 rounded-md mr-4 cursor-pointer text-sm" onClick={handleDiscoverClick}>
             Discover
           </li>
-          <li className="bg-neutral-900 text-white font-bold py-2 px-4 rounded-md cursor-pointer text-sm">
+          <li className="bg-neutral-900 text-white font-bold py-2 px-4 rounded-md cursor-not-allowed text-sm">
             Resume
           </li>
         </ul>
