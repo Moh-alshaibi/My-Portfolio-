@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 import Nav from "../components/Nav";
-import Aboutme from "../components/Aboutme";
-import Contact from "../components/Contact";
-import Experience from "../components/Experience";
-import Projects from "../components/Projects";
+import Aboutme from "../components/Blackfolder";
+import Contact from "../components/Yellowfolder";
+import Experience from "../components/Brownfolder";
+import Projects from "../components/Greenfolder";
 
 const Home = () => {
   const aboutMeRef = useRef(null);
