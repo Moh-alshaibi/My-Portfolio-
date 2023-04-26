@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 * {
+  cursor: url("/src/assets/img/cursorsilver.png"), auto;
   box-sizing: border-box;
 }
 html,
@@ -8,9 +9,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Press Start 2P", cursive;
-  background-color: #f0dcd4;
+  background-color: #f6d4b1;
   overflow: overlay;
-  cursor: url("/src/assets/img/cursorsilver.png"), auto;
 }
 
 .container {
@@ -84,6 +84,12 @@ body {
   width: 80px;
 }
 
+.borderline{
+  height: 50px;
+  width: 1px;
+  border:1px solid black;
+}
+
 #twitter svg {
   fill: #1da1f2;
 }
@@ -98,6 +104,19 @@ body {
 footer:hover {
   cursor: url("/src/assets/img/cursorwhite.png"), auto;
 }
+
+.img-responsive {
+  width: 14rem;
+  height: 14rem;
+}
+
+@media (max-width: 767px) {
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
+}
+
 
 @tailwind base;
 @tailwind components;

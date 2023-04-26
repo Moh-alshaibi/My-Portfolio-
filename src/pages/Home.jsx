@@ -13,16 +13,16 @@ const Home = () => {
   return (
     <>
       <Nav handleDiscoverClick={handleDiscoverClick} />
-      <div className="flex justify-center mt-64 ml-28">
+      <div className="flex justify-center mt-64 ml-48">
         {/* <img src="./src/assets/img/me.png" alt="" className="" /> */}
         <div>
           <p className="ml-96 text-2xl">Hey!</p>
-          <p className="ml-96 mt-8 w-1/2">
+          <p className="ml-96 mt-8 w-6/12">
             My name is <span className="text-red-900">Mohamed</span> and I'm a
             web developer who specializes in designing and building web
             applications and websites.
           </p>
-          <p className="ml-96 mt-8 w-1/2 text-lg">
+          <p className="ml-96 mt-8 w-7/12 text-lg">
             These files offer a unique and exciting{" "}
             <span className="text-blue-900">opportunity</span> to explore my
             work, where you can learn more about my{" "}
