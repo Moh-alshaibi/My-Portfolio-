@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Brownfolder = () => {
-  const [position, setPosition] = useState({ x: 250, y: 650 });
+  const [position, setPosition] = useState({ x: 350, y: 310 });
   const [isDragging, setIsDragging] = useState(false);
   const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
   const redDivRef = useRef(null);
@@ -59,7 +59,7 @@ const Brownfolder = () => {
         }}
       >
         <img
-          className="w-14 h-14 cursor-pointer"
+          className="w-14 h-14 cursor-pointer testings"
           src="./src/assets/img/brownfolder.png"
           alt=""
           onClick={handleImageClick}

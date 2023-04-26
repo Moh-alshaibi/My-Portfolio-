@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Yellowfolder = () => {
-  const [position, setPosition] = useState({ x: 1500, y: 150 });
+  const [position, setPosition] = useState({ x: 350, y: 510 });
   const [isDragging, setIsDragging] = useState(false);
   const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
   const redDivRef = useRef(null);
@@ -50,7 +50,7 @@ const Yellowfolder = () => {
   return (
     <div onMouseDown={handleMouseDown}>
       <div
-        ref={yellowDivRef}
+        ref={yellowDivRef} 
         className="border border-neutral-900 mt-14"
         style={{
           position: "absolute",
@@ -62,7 +62,7 @@ const Yellowfolder = () => {
         }}
       >
         <img
-          className="w-14 h-14 cursor-pointer"
+          className="w-14 h-14 cursor-pointer testings"
           src="./src/assets/img/yellowfolder.png"
           alt=""
           onClick={handleImageClick}
