@@ -13,8 +13,7 @@ const Home = () => {
   return (
     <>
       <Nav handleDiscoverClick={handleDiscoverClick} />
-      <div className="flex justify-center mt-64 ml-48">
-        {/* <img src="./src/assets/img/me.png" alt="" className="" /> */}
+      <div className="flex justify-center mt-64 ml-12">
         <div>
           <p className="ml-96 text-2xl">Hey!</p>
           <p className="ml-96 mt-8 w-6/12">
