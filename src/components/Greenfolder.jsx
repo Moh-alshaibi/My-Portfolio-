@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Greenfolder = () => {
-  const [position, setPosition] = useState({ x: 350, y: 410 });
+  const [position, setPosition] = useState({ x: 250, y: 410 });
   const [isDragging, setIsDragging] = useState(false);
   const [dragOffset, setDragOffset] = useState({ x: 1500, y: 1500 });
   const redDivRef = useRef(null);
