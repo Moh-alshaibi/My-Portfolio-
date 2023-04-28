@@ -10,7 +10,7 @@ const Blackfolder = () => {
           industry, and my goal is to create exciting and innovative websites
           for people to enjoy.
         </p>
-        <p className="absolute top-96 left-20 mt-72 w-5/6 p-8" >
+        <p className="mx-auto mt-96 w-96 p-8" >
           As a front-end developer, I am dedicated to crafting beautiful and
           user-friendly websites that provide an exceptional user experience. I
           am thrilled to be working in this exciting field and look forward to
