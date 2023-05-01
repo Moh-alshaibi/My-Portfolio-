@@ -59,11 +59,13 @@ body {
   transition: 0.3s;
   justify-content: center;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .social-btn svg {
   height: 24px;
   width: 24px;
+  cursor: pointer;
 }
 
 .social-btn span {
