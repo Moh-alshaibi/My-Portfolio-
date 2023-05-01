@@ -50,12 +50,12 @@ const Home = () => {
             </div>
             <div className="social-links cursor-pointer">
             <div id="twitter" className="social-btn flex-center cursor-pointer">
-              <img className="cursor-pointer" src="" alt="" />
+              <img className="cursor-pointer" src="/src/assets/img/Linkedin_2.png" alt="" />
               <span className="cursor-pointer">Lets Connect!</span>
             </div>
             <div className="social-links cursor-pointer">
             <div id="twitter" className="social-btn flex-center cursor-pointer">
-              <img className="cursor-pointer" src="" alt="" />
+              <img className="cursor-pointer" src="/src/assets/img/githublogo_2.png" alt="" />
               <span className="cursor-pointer">My Github!</span>
             </div>
             </div>
