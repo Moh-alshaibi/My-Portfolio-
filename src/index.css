@@ -77,8 +77,9 @@ body {
 }
 
 .social-btn:hover {
-  width: 150px;
+  width: 160px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .social-btn:hover span {
