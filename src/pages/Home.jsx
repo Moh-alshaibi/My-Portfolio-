@@ -18,15 +18,15 @@ const Home = () => {
           <div>
             <p className="ml-96 text-2xl">Hey!</p>
             <p className="ml-96 mt-8 w-6/12">
-              My name is <span className="text-red-900">Mohamed</span> and I'm a
+              My name is <span className="text-yellow-900">Mohamed</span> and I'm a
               web developer who specializes in designing and building web
               applications and websites.
             </p>
             <p className="ml-96 mt-8 w-7/12 text-lg">
               These files offer a unique and exciting{" "}
-              <span className="text-blue-900">opportunity</span> to explore my
+              <span className="text-yellow-800">opportunity</span> to explore my
               work, where you can learn more about my{" "}
-              <span className="text-green-600">skills</span> and{" "}
+              <span className="text-yellow-700">skills</span> and{" "}
               <span className="text-yellow-600">talents</span>.
             </p>
           </div>
@@ -40,21 +40,21 @@ const Home = () => {
       </div>
       <footer className="flex justify-center pt-38 text-sm p-14 bg-neutral-900 text-white">
         <div>
-          <p className="p-2 hover:text-red-300">
+          <p className="p-2 hover:text-yellow-600">
             Copyright © 2023 Mohamed Al-Shaibi
           </p>
-          <div className="social-links cursor-pointer">
-            <div id="twitter" className="social-btn flex-center cursor-pointer">
+          <div className="social-links">
+            <div id="twitter" className="social-btn flex-center">
               <img className="cursor-pointer" src="/src/assets/img/gmail.png" alt="" />
               <span className="cursor-pointer">E-mail me!</span>
             </div>
-            <div className="social-links cursor-pointer">
-            <div id="twitter" className="social-btn flex-center cursor-pointer">
+            <div className="social-links">
+            <div id="twitter" className="social-btn flex-center">
               <img className="cursor-pointer" src="/src/assets/img/Linkedin_2.png" alt="" />
               <span className="cursor-pointer">Lets Connect!</span>
             </div>
-            <div className="social-links cursor-pointer">
-            <div id="twitter" className="social-btn flex-center cursor-pointer">
+            <div className="social-links">
+            <div id="twitter" className="social-btn flex-center">
               <img className="cursor-pointer" src="/src/assets/img/githublogo_2.png" alt="" />
               <span className="cursor-pointer">My Github!</span>
             </div>
