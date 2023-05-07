@@ -25,7 +25,7 @@ const Blackfolder = () => {
               what the future holds.
             </p>
             <p
-              className="absolute top-8 right-10 text-3xl p-2 hover:text-gray-600 cursor-pointer"
+              className="absolute top-8 right-10 text-3xl p-2 hover:text-yellow-900 cursor-pointer"
               onClick={handleClosePage}
             >
               X
