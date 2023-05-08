@@ -40,7 +40,7 @@ const Home = () => {
       </div>
       <footer className="flex justify-center pt-38 text-sm p-14 bg-neutral-900 text-white">
         <div>
-          <p className="p-2 text-white hover:text-transparent hover:bg-gradient-to-r from-yellow-600 via-yellow-700 to-yellow-800 bg-clip-text">
+          <p className="p-2 text-white bg-gradient-to-r from-yellow-600 via-yellow-700 to-yellow-800 bg-clip-text transition-colors duration-200 hover:text-transparent hover:bg-gradient-to-r hover:from-yellow-600 hover:via-yellow-700 hover:to-yellow-800">
             Copyright © 2023 Mohamed Al-Shaibi
           </p>
           <div className="social-links">
