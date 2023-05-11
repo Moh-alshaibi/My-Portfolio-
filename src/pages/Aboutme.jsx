@@ -12,17 +12,19 @@ const Blackfolder = () => {
       {showPage && (
         <div>
           <div>
-            <p className="absolute top-36 left-20 w-96 p-8">
-              Hello there! I am a 21-year-old front-end developer originally from
-              Yemen, but currently residing in Germany. My passion lies in the tech
-              industry, and my goal is to create exciting and innovative websites
-              for people to enjoy.
+            <p className="mt-56 ml-80 w-96 p-10">
+              Hello there! I am a 21-year-old front-end developer originally
+              from Yemen, but currently residing in Germany.
             </p>
-            <p className="mx-auto mt-96 w-96 p-8">
+            <p className="ml-80 w-96 p-10">
+              My passion lies in the tech industry, and my goal is to create
+              exciting and innovative websites for people to enjoy.
+            </p>
+            <p className="absolute top-64 right-96 w-72 p-2">
               As a front-end developer, I am dedicated to crafting beautiful and
-              user-friendly websites that provide an exceptional user experience. I
-              am thrilled to be working in this exciting field and look forward to
-              what the future holds.
+              user-friendly websites that provide an exceptional user
+              experience. I am thrilled to be working in this exciting field and
+              look forward to what the future holds.
             </p>
             <p
               className="absolute top-8 right-10 text-3xl p-2 hover:text-yellow-900 cursor-pointer"
@@ -44,4 +46,3 @@ const Blackfolder = () => {
 };
 
 export default Blackfolder;
-
