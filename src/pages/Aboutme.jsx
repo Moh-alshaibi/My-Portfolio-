@@ -12,15 +12,15 @@ const Blackfolder = () => {
       {showPage && (
         <div>
           <div>
-            <p className="mt-56 ml-80 w-96 p-10">
-              Hello there! I am a 21-year-old front-end developer originally
+            <p className="aboutmep1">
+              Hello there! My name is Mohamed, and I am a 21-year-old front-end developer originally
               from Yemen, but currently residing in Germany.
             </p>
-            <p className="ml-80 w-96 p-10">
+            <p className="aboutmep2">
               My passion lies in the tech industry, and my goal is to create
               exciting and innovative websites for people to enjoy.
             </p>
-            <p className="absolute top-64 right-96 w-72 p-2">
+            <p className="aboutmep3">
               As a front-end developer, I am dedicated to crafting beautiful and
               user-friendly websites that provide an exceptional user
               experience. I am thrilled to be working in this exciting field and

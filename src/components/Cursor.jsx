@@ -3,7 +3,7 @@ import './Cursor.css';
 
 function Cursor() {
   return (
-    <div className="container">
+    <div className="cursor">
     </div>
   );
 }
