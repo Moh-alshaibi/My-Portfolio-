@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Blackfolder = () => {
   const [showPage, setShowPage] = useState(true);
@@ -26,12 +27,13 @@ const Blackfolder = () => {
               experience. I am thrilled to be working in this exciting field and
               look forward to what the future holds.
             </p>
-            <p
+            <Link
+              to="/home"
               className="absolute top-8 right-10 text-3xl p-2 hover:text-yellow-900 cursor-pointer"
               onClick={handleClosePage}
             >
               X
-            </p>
+            </Link>
           </div>
           <div className="absolute bottom-10 right-10 text-xl">
             <p>{"<About me/>"}</p>
