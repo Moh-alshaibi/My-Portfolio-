@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Blackfolder = () => {
+const Aboutme = () => {
   const [showPage, setShowPage] = useState(true);
 
   const handleClosePage = () => {
@@ -47,4 +47,4 @@ const Blackfolder = () => {
   );
 };
 
-export default Blackfolder;
+export default Aboutme;

@@ -3,7 +3,7 @@ import Nav from "../components/Nav";
 import Aboutme from "../components/Blackfolder";
 import Contact from "../components/Yellowfolder";
 import Experience from "../components/Brownfolder";
-import Projects from "../components/Greenfolder";
+import Projects from "../components/Lightfolder";
 
 const Home = () => {
   const aboutMeRef = useRef(null);
