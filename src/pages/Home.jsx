@@ -23,7 +23,7 @@ const Home = () => {
             applications and websites.
           </p>
           <p className="ml-96 mt-8 w-7/12 text-lg">
-            These files offer a unique and exciting{" "}
+            These files offer a unique and exhilarating{" "}
             <span className="text-yellow-800">opportunity</span> to explore my
             work, where you can learn more about my{" "}
             <span className="text-yellow-700">skills</span> and{" "}
