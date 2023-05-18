@@ -5,12 +5,12 @@ const Projects = () => {
   return (
     <div>
         <div className="grid-container">
-      <div className="grid-item"></div>
-      <div className="grid-item"></div>
-      <div className="grid-item"></div>
-      <div className="grid-item"></div>
-      <div className="grid-item"></div>
-      <div className="grid-item"></div>
+      <div className="grid-item text-white flex items-center justify-center">Resturant Map</div>
+      <div className="grid-item text-white flex items-center justify-center">Drawing App</div>
+      <div className="grid-item text-white flex items-center justify-center">Book Finder</div>
+      <div className="grid-item text-white flex items-center justify-center">Currency Convert</div>
+      <div className="grid-item text-white flex items-center justify-center">Online Store</div>
+      <div className="grid-item text-white flex items-center justify-center">Card Game</div>
     </div>
       <Link
         to="/home"

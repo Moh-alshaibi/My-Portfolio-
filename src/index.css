@@ -44,11 +44,18 @@ body {
   gap: 50px; 
   margin-top: 150px;
   margin-left: 230px;
+  
 }
 
 .grid-item {
   background-color: black;
   border-radius: 5px;
+}
+
+.grid-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: 0.8s;
 }
 
 ::selection {
