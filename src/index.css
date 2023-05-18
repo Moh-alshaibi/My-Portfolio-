@@ -39,11 +39,11 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 250px);
-  grid-template-rows: repeat(2, 200px);
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(2, 250px);
   gap: 50px; 
-  margin-top: 200px;
-  margin-left: 320px;
+  margin-top: 150px;
+  margin-left: 230px;
 }
 
 .grid-item {
