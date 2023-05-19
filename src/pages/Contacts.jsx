@@ -7,6 +7,7 @@ const Contacts = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+
   const handleClosePage = () => {
     setShowPage(false);
   };
