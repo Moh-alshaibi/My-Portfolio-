@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 const   Lightfolder = () => {
-  const [position, setPosition] = useState({ x: 250, y: 410 });
+  const [position, setPosition] = useState({ x: 220, y: 460 });
   const [isDragging, setIsDragging] = useState(false);
   const [dragOffset, setDragOffset] = useState({ x: 1500, y: 1500 });
   const redDivRef = useRef(null);
@@ -56,7 +56,6 @@ const   Lightfolder = () => {
     <div onMouseDown={handleMouseDown}>
       <div
         ref={redDivRef}
-        className="border border-neutral-900 mt-14"
         style={{
           position: "absolute",
           left: position.x,
@@ -72,6 +71,11 @@ const   Lightfolder = () => {
           alt=""
           onClick={handleImageClick}
         />
+          <div className="text-center mt-2 text-xs">
+          <p className="inline-block mx-auto">
+            <span className="block">Projects</span>
+          </p>
+        </div>
       </div>
     </div>
   );

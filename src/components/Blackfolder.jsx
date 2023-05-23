@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Blackfolder = () => {
-  const [position, setPosition] = useState({ x: 250, y: 210 });
+  const [position, setPosition] = useState({ x: 220, y: 260 });
   const [isDragging, setIsDragging] = useState(false);
   const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
   const redDivRef = useRef(null);
@@ -48,12 +48,12 @@ const Blackfolder = () => {
     <div onMouseDown={handleMouseDown}>
       <div
         ref={redDivRef}
-        className="mt-14 border border-neutral-900"
+      
         style={{
           position: "absolute",
           left: position.x,
           top: position.y,
-          cursor: isDragging ? "Pointer" : "point",
+          cursor: isDragging ? "pointer" : "default",
           zIndex: isDragging ? 1 : 0,
           padding: "15px",
         }}
@@ -64,10 +64,14 @@ const Blackfolder = () => {
           alt=""
           onClick={handleImageClick}
         />
+        <div className="text-center mt-2 text-xs">
+          <p className="inline-block mx-auto">
+            <span className="block">About Me</span>
+          </p>
+        </div>
       </div>
     </div>
   );
-  
 };
 
 export default Blackfolder;

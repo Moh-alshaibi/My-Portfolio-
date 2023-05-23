@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Brownfolder = () => {
-  const [position, setPosition] = useState({ x: 250, y: 310 });
+  const [position, setPosition] = useState({ x: 220, y: 360 });
   const [isDragging, setIsDragging] = useState(false);
   const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
   const redDivRef = useRef(null);
@@ -48,7 +48,6 @@ const Brownfolder = () => {
     <div onMouseDown={handleMouseDown}>
       <div
         ref={redDivRef}
-        className="border border-neutral-900 mt-14"
         style={{
           position: "absolute",
           left: position.x,
@@ -64,6 +63,11 @@ const Brownfolder = () => {
           alt=""
           onClick={handleImageClick}
         />
+          <div className="text-center mt-2 text-xs">
+          <p className="inline-block mx-auto">
+            <span className="block">Experience</span>
+          </p>
+        </div>
       </div>
     </div>
   );
