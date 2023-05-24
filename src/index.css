@@ -68,6 +68,18 @@ body {
   border-radius: 5px;
   width: 100px;
   height: 45px;
+  position: relative;
+}
+
+.grid-item-exp::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .writing-container-exp {

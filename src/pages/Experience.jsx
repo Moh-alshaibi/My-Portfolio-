@@ -70,11 +70,11 @@ const Experience = () => {
             <p>{"<Experience>"}</p>
           </div>
           <div className="writing-container-exp">
-            <p className="writing-text-exp">HTML.</p>
-            <p className="writing-text-exp">CSS.</p>
-            <p className="writing-text-exp">JAVASCRIPT.</p>
-            <p className="writing-text-exp">REACTJS.</p>
-            <p className="writing-text-exp">TAILWINDCSS.</p>
+            <p className="writing-text-exp hover:underline">HTML.</p>
+            <p className="writing-text-exp hover:underline">CSS.</p>
+            <p className="writing-text-exp hover:underline">JAVASCRIPT.</p>
+            <p className="writing-text-exp hover:underline">REACTJS.</p>
+            <p className="writing-text-exp hover:underline">TAILWINDCSS.</p>
           </div>
           <Grid />
         </div>

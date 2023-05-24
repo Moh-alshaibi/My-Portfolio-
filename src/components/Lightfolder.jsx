@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 const   Lightfolder = () => {
-  const [position, setPosition] = useState({ x: 220, y: 460 });
+  const [position, setPosition] = useState({ x: 220, y: 455 });
   const [isDragging, setIsDragging] = useState(false);
   const [dragOffset, setDragOffset] = useState({ x: 1500, y: 1500 });
   const redDivRef = useRef(null);
