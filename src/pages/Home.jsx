@@ -18,16 +18,43 @@ const Home = () => {
         <div>
           <p className="ml-96 text-2xl">Hey!</p>
           <p className="ml-96 mt-8 w-6/12">
-            My name is <span className="text-yellow-900">Mohamed</span> and I'm
-            a web developer who specializes in designing and building web
-            applications and websites.
+            My name is{" "}
+            <span
+              className="bg-gradient-to-r bg-clip-text text-transparent 
+            from-yellow-600 via-yellow-700 to-yellow-900
+            animate-text"
+            >
+              Mohamed
+            </span>{" "}
+            and I'm a web developer who specializes in designing and building
+            web applications and websites.
           </p>
           <p className="ml-96 mt-8 w-7/12 text-lg">
             These files offer a unique and exhilarating{" "}
-            <span className="text-yellow-800">opportunity</span> to explore my
-            work, where you can learn more about my{" "}
-            <span className="text-yellow-700">skills</span> and{" "}
-            <span className="text-yellow-600">talents</span>.
+            <span
+              className="bg-gradient-to-r bg-clip-text text-transparent 
+            from-yellow-600 via-yellow-700 to-yellow-900
+            animate-text"
+            >
+              opportunity
+            </span>{" "}
+            to explore my work, where you can learn more about my{" "}
+            <span
+              className="bg-gradient-to-r bg-clip-text text-transparent 
+            from-yellow-600 via-yellow-700 to-yellow-900
+            animate-text"
+            >
+              skills
+            </span>{" "}
+            and{" "}
+            <span
+              className="bg-gradient-to-r bg-clip-text text-transparent 
+            from-yellow-600 via-yellow-700 to-yellow-900
+            animate-text"
+            >
+              talents
+            </span>
+            .
           </p>
         </div>
       </div>
@@ -109,4 +136,3 @@ const Home = () => {
 };
 
 export default Home;
-

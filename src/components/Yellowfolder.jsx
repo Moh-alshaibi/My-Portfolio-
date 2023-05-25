@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Yellowfolder = () => {
-  const [position, setPosition] = useState({ x: 220, y: 555 });
+  const [position, setPosition] = useState({ x: 210, y: 555 });
   const [isDragging, setIsDragging] = useState(false);
   const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
   const redDivRef = useRef(null);
