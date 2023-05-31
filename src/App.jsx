@@ -9,8 +9,9 @@ import React, { useRef } from 'react';
 import Home from './pages/Home';
 import Contacts from './pages/Contacts';
 import Aboutme from './pages/Aboutme';
-import Experience from './pages/Experience';
+import Experience from './pages/Skills';
 import Projects from './pages/Projects';
+import Skills from './pages/Skills';
 
 const router = createBrowserRouter([
   {
@@ -26,8 +27,8 @@ const router = createBrowserRouter([
     element: <Contacts />,
   },
   {
-    path: '/experience',
-    element: <Experience />,
+    path: '/skills',
+    element: <Skills />
   },
   {
     path: '/projects',

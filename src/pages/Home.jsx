@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import Nav from "../components/Nav";
 import Aboutme from "../components/Blackfolder";
 import Contact from "../components/Yellowfolder";
-import Experience from "../components/Brownfolder";
+import Skills from "../components/Brownfolder";
 import Projects from "../components/Lightfolder";
 import LoadingScreen from "../components/LoadingScreen";
 
@@ -66,7 +66,7 @@ const Home = () => {
           <div className="mt-96" ref={aboutMeRef}>
             <Aboutme />
             <Contact />
-            <Experience />
+            <Skills />
             <Projects />
           </div>
           <footer className="flex justify-center pt-38 text-sm p-14 bg-neutral-900 text-white">

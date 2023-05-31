@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Experience = () => {
+const Skills = () => {
   const [showPage, setShowPage] = useState(true);
 
   const handleClosePage = () => {
@@ -64,10 +64,10 @@ const Experience = () => {
             </Link>
           </div>
           <div className="absolute bottom-10 right-10 text-xl">
-            <p>{"<Experience/>"}</p>
+            <p>{"<Skills/>"}</p>
           </div>
           <div className="absolute top-10 left-5 text-xl">
-            <p>{"<Experience>"}</p>
+            <p>{"<Skills>"}</p>
           </div>
           <div className="writing-container-exp">
             <p className="writing-text-exp hover:underline">HTML.</p>
@@ -83,4 +83,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Skills;

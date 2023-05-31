@@ -41,7 +41,7 @@ const Brownfolder = () => {
   }
 
   function handleImageClick() {
-    navigate("/experience");
+    navigate("/skills");
   }
 
   return (
@@ -65,7 +65,7 @@ const Brownfolder = () => {
         />
           <div className="text-center mt-2 text-xs">
           <p className="inline-block mx-auto">
-            <span className="block">Experience</span>
+            <span className="block">Skills</span>
           </p>
         </div>
       </div>
