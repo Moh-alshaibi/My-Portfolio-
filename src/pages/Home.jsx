@@ -9,20 +9,36 @@ import LoadingScreen from "../components/LoadingScreen";
 const Home = () => {
   const aboutMeRef = useRef(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [isAboutMeOpen, setIsAboutMeOpen] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => {
+    const hasVisited = localStorage.getItem("LoadingVis");
+
+    if (hasVisited) {
       setIsLoading(false);
-    }, 5500);
+    } else {
+      setTimeout(() => {
+        setIsLoading(false);
+        localStorage.setItem("LoadingVis", true);
+      }, 5500);
+    }
+
+    return () => {
+      setIsLoading(false);
+    };
   }, []);
 
   const handleDiscoverClick = () => {
     aboutMeRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
+  const handleCloseAboutMe = () => {
+    setIsAboutMeOpen(false);
+  };
+
   return (
     <>
-      {isLoading ? (
+      {isLoading && !isAboutMeOpen ? (
         <LoadingScreen />
       ) : (
         <>
@@ -32,31 +48,39 @@ const Home = () => {
               <p className="ml-96 text-2xl">Hey!</p>
               <p className="ml-96 mt-8 w-6/12">
                 My name is{" "}
-                <span className="bg-gradient-to-r bg-clip-text text-transparent 
+                <span
+                  className="bg-gradient-to-r bg-clip-text text-transparent 
                 from-yellow-600 via-yellow-700 to-yellow-900
-                animate-text">
+                animate-text"
+                >
                   Mohamed
                 </span>{" "}
-                and I'm a web developer who specializes in designing and building
-                web applications and websites.
+                and I'm a web developer who specializes in designing and
+                building web applications and websites.
               </p>
               <p className="ml-96 mt-8 w-7/12 text-lg">
                 These files offer a unique and exhilarating{" "}
-                <span className="bg-gradient-to-r bg-clip-text text-transparent 
+                <span
+                  className="bg-gradient-to-r bg-clip-text text-transparent 
                 from-yellow-600 via-yellow-700 to-yellow-900
-                animate-text">
+                animate-text"
+                >
                   opportunity
                 </span>{" "}
                 to explore my work, where you can learn more about my{" "}
-                <span className="bg-gradient-to-r bg-clip-text text-transparent 
+                <span
+                  className="bg-gradient-to-r bg-clip-text text-transparent 
                 from-yellow-600 via-yellow-700 to-yellow-900
-                animate-text">
+                animate-text"
+                >
                   skills
                 </span>{" "}
                 and{" "}
-                <span className="bg-gradient-to-r bg-clip-text text-transparent 
+                <span
+                  className="bg-gradient-to-r bg-clip-text text-transparent 
                 from-yellow-600 via-yellow-700 to-yellow-900
-                animate-text">
+                animate-text"
+                >
                   talents
                 </span>
                 .
@@ -64,7 +88,10 @@ const Home = () => {
             </div>
           </div>
           <div className="mt-96" ref={aboutMeRef}>
-            <Aboutme />
+            <Aboutme
+              isAboutMeOpen={isAboutMeOpen}
+              onCloseAboutMe={handleCloseAboutMe}
+            />
             <Contact />
             <Skills />
             <Projects />

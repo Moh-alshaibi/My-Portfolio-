@@ -7,7 +7,6 @@ const Contacts = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-
   const handleClosePage = () => {
     setShowPage(false);
   };
@@ -33,13 +32,12 @@ const Contacts = () => {
               X
             </Link>
           </div>
-          <div className="absolute bottom-10 right-10 text-xl">
-            <p>{"<Contact/>"}</p>
-          </div>
           <div className="absolute top-10 left-5 text-xl">
             <p>{"<Contact>"}</p>
           </div>
-
+          <div className="absolute bottom-10 right-10 text-xl">
+            <p>{"<Contact/>"}</p>
+          </div>
           <div className="contact-form-container bg-neutral-900 mt-48">
             <h2 className="flex justify-center text-white">Contact me</h2>
             <form onSubmit={handleSubmit} className="contact-form">
